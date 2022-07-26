@@ -1,0 +1,175 @@
+header{
+    padding: 0px 0% 0px 20%;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    background-color:rgb(6, 6, 32)
+}
+
+#Top{
+    float: right;
+    position: fixed;
+}
+
+header img {
+    vertical-align: middle;
+    margin: 1%;
+    
+}
+
+#logo {
+    float: left;
+}
+
+header .HeaderNav {
+    margin: 1%  ;
+    float: right;
+    text-decoration: none;
+    font-size: x-large;
+    width: 50%;
+    position: sticky;
+}
+
+header ul {
+    text-decoration: none;
+    
+    vertical-align: middle;
+    
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+header a {
+    color: rgb(168, 166, 166);
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0% 2%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3%;
+    display: inline-block;
+
+    position: relative;
+
+    
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+
+    
+}
+
+header a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+header a:hover:after {
+    color: rgb(255, 255, 255);
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+
+#IntroHeader{
+    background-color: black;
+    padding: 5% 0 ;
+    background-image: url("../images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg");
+    background-size: 100% 200%;
+    
+}
+
+#IntroName {
+    background-color: rgba(0, 0, 0, 0.74);
+    border: 15px white groove;
+    margin: 5% 35%;
+    text-align: center;
+}
+
+#NameContainer{
+    color: #39ff14;
+    padding: 5% 10%;
+    font: bolder;
+}
+
+#MainName {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+section{
+    margin: 2% 10%;
+    padding: 1% 5%;
+   
+}
+
+section ul{
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    list-style-type:'> ' ;
+    
+}
+
+section h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 2000;
+}
+
+section img {
+    float:right;
+}
+
+section {
+    color: whitesmoke;
+    border: 5px whitesmoke solid ;
+    border-radius: 25px;
+    background-color: rgb(5, 5, 56);
+    z-index: 1;
+}
+
+body {
+    background-color:rgb(6, 6, 32);
+}
+
+#Contact{
+    text-align: center;
+}
+
+#ContactForm{
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    color: #39ff14;
+}
+
+#Languages{
+    color: aqua;
+}
+
+#Languages ul li {
+    display: inline;
+}
+
+.attr{
+    color: red;
+}
+
+#Languages table {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    margin: 0% 25%;
+}
