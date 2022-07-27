@@ -1,7 +1,9 @@
 header{
-    padding: 0px 0% 0px 20%;
+    display: flex;
+    justify-content: space-around;
     z-index: 1;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
     background-color:rgb(6, 6, 32)
 }
@@ -22,45 +24,46 @@ header img {
 }
 
 header .HeaderNav {
-    margin: 1%  ;
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% ;
     text-decoration: none;
     font-size: x-large;
-    width: 50%;
-    position: sticky;
+   
+  
 }
 
 header ul {
+
     text-decoration: none;
-    
+
     vertical-align: middle;
-    
+    width: 25%;
 }
 
 header ul li {
+    padding: 0% 10%;
     list-style-type: none;
     display: inline;
     vertical-align: middle;
 }
 
 header a {
+    display: flex;
     color: rgb(168, 166, 166);
     text-decoration: none;
     vertical-align: middle;
     margin: 0% 2%;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 3%;
+ 
     display: inline-block;
-
     position: relative;
 
     
 }
 
 header a:hover {
-    color: rgb(255, 255, 255);
-
-    
+    color: rgb(255, 255, 255);  
 }
 
 header a:after {
@@ -84,6 +87,12 @@ header a:hover:after {
     
 }
 
+.HeaderList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
 #IntroHeader{
     background-color: black;
     padding: 5% 0 ;
@@ -93,7 +102,7 @@ header a:hover:after {
 }
 
 #IntroName {
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgba(5, 1, 51, 0.74);
     border: 15px white groove;
     margin: 5% 35%;
     text-align: center;
@@ -156,20 +165,47 @@ body {
     color: #39ff14;
 }
 
-#Languages{
-    color: aqua;
+/* Language Section */
+
+#Languages {
+    margin: 5% 20%;
+    border: 3px whitesmoke solid;
+   
+}
+
+#Languages i{
+    height: 100px;
 }
 
 #Languages ul li {
     display: inline;
 }
 
+#Languages p {
+    margin: 5% 25%;
+    margin-top: 20px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    height: 500px;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.flex-item p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .attr{
     color: red;
 }
 
-#Languages table {
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-    margin: 0% 25%;
+.var{
+    color: orange;
 }

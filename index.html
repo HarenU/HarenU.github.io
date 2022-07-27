@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e6946e1ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/Styles.css">
     <title>Haren Upadhayay</title>
 </head>
@@ -12,10 +13,10 @@
     <img src="images/Superbolide.png" alt="Logo" height="75px">
 
     <nav class="HeaderNav">
-        <ul>
-            <li><a href="index.html"> About Me</a></li>
-            <li><a href="ProjectsPage.html"> My Projects</a></li>
-            <li><a href="ContactPage.html"> Contact Me</a></li>
+        <ul class="HeaderList">
+            <li><a href="index.html"> About</a></li>
+            <li><a href="ProjectsPage.html">Projects</a></li>
+            <li><a href="ContactPage.html"> Contact</a></li>
         </ul>
     </nav>
 
@@ -37,12 +38,12 @@
 
     <section id="AboutMe">
         <h1>About Me</h1>
-        <ul id="Languages">
-            <li><a class="attr">Name = </a>Haren Upadhayay</li>
-            <li><a class="attr">Age = </a>22</li>
-            <li><a class="attr">Graduated_From = </a>University of Greenwich</li>
-            <li><a class="attr">Degree = </a>BSc H Computer Science</li>
-            <li><a class="attr">Graduated_Year = </a>2022</li>
+        <ul>
+            <li><a class="var">str</a> <a class="attr">Name = </a>Haren Upadhayay</li>
+            <li><a class="var">int</a> <a class="attr">Age = </a>22</li>
+            <li><a class="var">str</a> <a class="attr">Graduated_From = </a>University of Greenwich</li>
+            <li><a class="var">str</a> <a class="attr">Degree = </a>BSc H Computer Science</li>
+            <li><a class="var">str</a> <a class="attr">Graduated_Year = </a>2022</li>
         </ul>
 
         <p>
@@ -53,21 +54,36 @@
     </section>
 
     <section id="Languages">
-        <h1>Languages and Stuff</h1>
-        <table>
-            <tr>
-                <th>HTML</th>
-                <th>CSS</th>
-            </tr>
-            <tr>
-                <td>
-                    <img src="/images/Languages/HTML5.png" alt="HTML" height="100">
-                </td>
-                <td><img src="/images/Languages/CSS.png" alt="CSS" height="100"></td>
-            </tr>
-        </table>
+        <h1>My Languages</h1>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <i class="fa-brands fa-html5 fa-7x"></i>
+                <p>HTML</p>
+            </div>
+
+            <div class="flex-item">
+                <i class="fa-brands fa-css3-alt fa-7x"></i>
+                <p>CSS</p>
+            </div>
+
+            <div class="flex-item">
+                <i class="fa-brands fa-js fa-7x"></i>
+                <p>Javascript</p>
+            </div>
+
+            <div class="flex-item">
+                <i class="fa-brands fa-react fa-7x"></i>
+                <p>React</p>
+            </div>
+
+            <div class="flex-item">
+                <i class="fa-brands fa-python fa-7x"></i>
+                <p>Python</p>
+            </div>
 
 
+        </div>
     </section>
 </body>
 
