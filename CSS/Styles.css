@@ -130,8 +130,6 @@ header a:hover:after {
 }
 
 #NameContainer{
-
-    
     color: #39ff14;
     padding: 5% 10%;
     font: bolder;
@@ -141,6 +139,12 @@ header a:hover:after {
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
     font-weight: bolder;
+}
+
+#AboutMe-container{
+    border: 1px white solid;
+    padding: 3%;
+    background-color: rgb(5, 5, 56);
 }
 
 section{
