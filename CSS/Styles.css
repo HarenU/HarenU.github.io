@@ -131,6 +131,16 @@ header a:hover:after {
     text-align: center;
 }
 
+#IntroName button {
+    padding: 4% 10%;
+    font-size: 25px;
+    margin: 0% 0% 5% 0%;
+    background: transparent;
+    color: #39ff14;
+    border: 2px #39ff14 solid;
+    z-index: 2;
+}
+
 #NameContainer{
     color: #39ff14;
     padding: 5% 10%;
@@ -361,6 +371,8 @@ body {
     justify-content: center;
     gap: 3%;
 }
+
+
 
 #language-container {
     justify-content: center;
