@@ -296,3 +296,14 @@ body {
     justify-content: center;
     gap: 1%;
 }
+
+#language-container {
+    justify-content: center;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    color: rgb(209, 209, 209);
+    gap: 2%;
+}
+
