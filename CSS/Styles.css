@@ -200,7 +200,7 @@ body {
 @media (min-width: 481px){
     #Languages {
         margin: 0% 20%;
-      
+
     
     }
 
@@ -221,13 +221,16 @@ body {
         height: 500px;
         flex-wrap: wrap;
         height: fit-content;
+        border: 1px white solid;
+        padding: 3%;
+        background-color: rgb(5, 5, 56);
     }
 }
 
 @media (max-width: 480px){
     #Languages {
         margin: 0% 20%;
-     
+
     
     }
     #Languages img{
