@@ -2,7 +2,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
-
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -153,14 +155,14 @@ section{
    
 }
 
-section ul{
+#AboutMe-container ul{
     font-family: 'Courier New', Courier, monospace;
     display: block;
     list-style-type: none ;
     
 }
 
-section ul li::before {
+#AboutMe-container ul li::before {
     content: ">";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #39ff14; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
