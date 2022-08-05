@@ -1,3 +1,8 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 header{
     display: flex;
     justify-content: space-around;
@@ -5,7 +10,9 @@ header{
     position: sticky;
     width: 100%;
     top: 0px;
-    background-color:rgb(6, 6, 32)
+    background-color:rgba(6, 6, 32, 0.911);
+
+    
 }
 
 #Top{
@@ -138,7 +145,7 @@ header a:hover:after {
 
 section{
     margin: 2% 10%;
-    padding: 1% 5%;
+    padding: 5% 5% 0% 5%;
    
 }
 
@@ -150,6 +157,7 @@ section ul{
 }
 
 section h1{
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 2000;
 }
@@ -158,12 +166,11 @@ section img {
     float:right;
 }
 
+
+
 section {
     color: whitesmoke;
-    border: 5px whitesmoke solid ;
-    border-radius: 25px;
-    background-color: rgb(5, 5, 56);
-    z-index: 1;
+
 }
 
 body {
@@ -192,8 +199,8 @@ body {
 
 @media (min-width: 481px){
     #Languages {
-        margin: 5% 20%;
-        border: 3px whitesmoke solid;
+        margin: 0% 20%;
+      
     
     }
 
@@ -205,10 +212,6 @@ body {
         display: inline;
     }
 
-    #Languages p {
-        
-        
-    }
 
     .flex-container{
         display: flex;
@@ -223,8 +226,8 @@ body {
 
 @media (max-width: 480px){
     #Languages {
-        margin: 5% 20%;
-        border: 3px whitesmoke solid;
+        margin: 0% 20%;
+     
     
     }
     #Languages img{
@@ -264,4 +267,32 @@ body {
 
 .var{
     color: orange;
+}
+
+#project-container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 2%;
+}
+
+
+.project{
+    border: 1px white solid;
+    padding: 3%;
+    background-color: rgb(5, 5, 56);
+}
+
+#Contact a{
+    color: white;
+}
+
+#Contact a:hover{
+    color: rgb(175, 175, 175);
+}
+
+#Contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
 }
