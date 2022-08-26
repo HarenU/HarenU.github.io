@@ -6,22 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1e6946e1ee.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>Haren Upadhayay</title>
 </head>
 
 
 <body>
     <header>
-        <img src="images/Superbolide.png" alt="Logo" height="75px">
+        <!-- <img src="images/Superbolide.png" alt="Logo" height="75px"> -->
 
-        <nav class="HeaderNav">
+        <div class="HeaderNav">
             <ul class="HeaderList">
-                <li><a href="#AboutMe"> About</a></li>
+                <!-- <li><a href="#AboutMe"> About</a></li> -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#Contact"> Contact</a></li>
             </ul>
-        </nav>
+        </div>
 
     </header>
 
@@ -59,7 +64,7 @@
     </section> -->
 
     <section id="Languages">
-        <h1>My Languages</h1>
+        <h4 class="section-header">My Languages</h4>
         <div class="skill-container">
 
             <div class="skill-item">
@@ -94,87 +99,65 @@
 
 
     <section id="projects">
-        <h1>Some Projects</h1>
+        <h4>Some Projects</h4>
         <div id="project-container">
             <div class="project">
 
-                <h1>Project 1</h1>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
+                <h5 class="projectHeader">FFXIV Node Tracker</h5>
+                <a href="https://harenu.github.io/FFXIV-Node-Timers/" target="_blank">
+                    <img class="projectImage" src="./images/5eb7yq5.png" alt=""
+                        href="https://harenu.github.io/FFXIV-Node-Timers/" target="_blank"></a>
+
+                <ul class="collapsible">
+                    <li class="active">
+                        <div class="collapsible-header"><i class="material-icons">Features</i></div>
+                        <div class="collapsible-body"><span>
+                                <ul class="projectFeatures">
+                                    <li class="feature">Track in-game clock from within the website</li>
+                                    <li class="feature">Search from a list of Nodes imported from JSON file</li>
+                                    <li class="feature">Track whichever nodes you need by clicking</li>
+                                    <li class="feature">Visual indicator when nodes are available</li>
+                                    <li class="feature">Store saved data for user to come back to</li>
+                                </ul>
+                            </span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">Description</i></div>
+                        <div class="collapsible-body">
+                            <p class="projectDesc">
+                                Within the game "Final Fantasy XIV: Online", there are spots which users can get items
+                                from also known as "nodes". Some of these nodes only appear within certain time
+                                intervals based on an in-game clock. The aim of this project is to help users track
+                                these items and alert them when they are available to be collected.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">Challenges</i></div>
+                        <div class="collapsible-body"><span> One of the challenges I had to face was parsing JSON data
+                                and inserting it into the table. Furthermore, it was my first time utilising
+                                localStorage so i had to learn how I can store JSON data despite it only allowing you to
+                                store string</span></div>
+                    </li>
                 </ul>
 
-                <p>
-                    Description of project <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis sunt labore sit
-                    mollitia,
-                    quidem
-                    libero dolore beatae quisquam dignissimos error aut iure at! Architecto corporis ipsam in
-                    repudiandae
-                    officia!
-                </p>
-                <ul id="language-container">
-                    <li><i class="fa-brands fa-python fa-2x"></i></li>
-                    <li><i class="fa-brands fa-html5 fa-2x"></i></li>
-                </ul>
-            </div>
-            <div class="project">
-
-                <h1>Project 2</h1>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-
-                <p>
-                    Description of project <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis sunt labore sit mollitia,
-                    quidem
-                    libero dolore beatae quisquam dignissimos error aut iure at! Architecto corporis ipsam in
-                    repudiandae
-                    officia!
-                </p>
-                <ul id="language-container">
-                    <li><i class="fa-brands fa-python fa-2x"></i></li>
-                    <li><i class="fa-brands fa-html5 fa-2x"></i></li>
-                </ul>
-            </div>
-            <div class="project">
-
-                <h1>Project 2</h1>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-
-                <p>
-                    Description of project <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis sunt labore sit mollitia,
-                    quidem
-                    libero dolore beatae quisquam dignissimos error aut iure at! Architecto corporis ipsam in
-                    repudiandae
-                    officia!
-                </p>
 
 
-                <ul id="language-container">
-                    <li><i class="fa-brands fa-python fa-2x"></i></li>
-                    <li><i class="fa-brands fa-html5 fa-2x"></i></li>
+                <ul class="projectLanguage">
+
+                    <li><i class="fa-brands fa-html5 fa-3x"></i></li>
+                    <li><i class="fa-brands fa-js fa-3x"></i></li>
+                    <li><i class="fa-brands fa-css3-alt fa-3x"></i></li>
+                    <li></li>
                 </ul>
             </div>
-
         </div>
+
     </section>
 
 
     <section id="Contact">
-        <h1>Get in Touch!</h1>
+        <h4>Get in Touch!</h4>
 
         <div id="Contact-container">
             <a href="https://www.linkedin.com/in/haren-upadhayay-aa4816147/" target="_blank"><i
@@ -186,6 +169,12 @@
 
         </div>
     </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
