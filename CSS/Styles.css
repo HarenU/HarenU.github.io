@@ -295,6 +295,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
     gap: 2%;
+    min-height: 0;
+    min-width: 0;
 }
 
 .projectHeader      {grid-area: projectHeader}
@@ -304,10 +306,11 @@ body {
 .projectLanguage    {grid-area: projectLanguage}
 
 .project{
+    
     display: grid;
     border: 1px white solid;
-    
-
+    overflow: hidden;
+    min-width: 0;
     background-color: rgb(5, 5, 56);
     grid-template:  "projectHeader"
                     "projectImage"
@@ -339,10 +342,7 @@ body {
     background-color: rgb(5, 5, 56);
 }
 
-.projectFeatures{
 
-    margin: 1% 1%;
-}
 
 .projectDesc{
     margin: 1% 2%;
