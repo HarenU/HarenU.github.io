@@ -3,6 +3,15 @@ body{
     padding: 0px;
 }
 
+*{
+    color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+html{
+    
+}
+
 /* ul:not(.browser-default)>li {
     list-style-type: disc;
     padding-left: 0%;
@@ -124,9 +133,9 @@ header a:hover:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    padding: 5% 0 ;
-    background-image: url("../images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg");
+    filter: brightness(100%);
+    background-image: url(../images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg);
+    padding: 10% 0 ;
     background-size: 100% 200%;
     
 }
@@ -135,10 +144,11 @@ header a:hover:after {
     background-color: rgba(5, 1, 51, 0.74);
     border: 15px white groove;
     padding: 0% 2%;
+    
     text-align: center;
 }
 
-#IntroName button {
+#CVDown {
     padding: 4% 10%;
     font-size: 25px;
     margin: 0% 0% 5% 0%;
@@ -146,24 +156,27 @@ header a:hover:after {
     color: #39ff14;
     border: 2px #39ff14 solid;
     z-index: 2;
+    float: right;
+
 }
 
-#IntroName button:hover {
+#CVDown:hover {
     background-color: #39ff14;
     color:rgb(5, 1, 51);
 
 }
 
 #NameContainer{
-    color: #39ff14;
-    padding: 5% 10%;
+    border: whitesmoke 2px solid;
+    background-color: rgba(0, 0, 0, 0.703);
+    justify-content: center;
+    padding: 2% 5% 2% 2%;
     font: bolder;
+    max-width: 40%;
 }
 
-#MainName {
-
-    font-size: xx-large;
-    font-weight: bolder;
+#name {
+   margin: -1% 0 0 0 ;
 }
 
 #AboutMe-container{
@@ -174,6 +187,14 @@ header a:hover:after {
     background-color: rgb(5, 5, 56);
 }
 
+.str{
+    color: #D4935E;
+}
+
+.int{
+    color: #B0D0A9;
+}
+
 section{
     margin: 2% 10%;
     padding: 5% 5% 0% 5%;
@@ -181,20 +202,20 @@ section{
 }
 
 #AboutMe-container ul{
-
+    padding: 0% 2rem;
     display: block;
     list-style-type: none ;
     
 }
 
-#AboutMe-container ul li::before {
-    content: ">";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #39ff14; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+/* #AboutMe-container ul li::before {
+    content: ">"; 
+    color: #39ff14;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  } */
 
 section h4{
     text-align: center;
@@ -217,20 +238,16 @@ body {
     background-color:rgb(6, 6, 32);
 }
 
-#Contact{
-    text-align: center;
-}
 
-#ContactForm{
-    align-items: center;
-    margin: auto;
-    width: 40%;
-    color: #39ff14;
-}
+
+
 
 /* Language Section */
 #Languages img{
     transition: all 1s;
+}
+section>p{
+    text-align: center;
 }
 
 .language-header{
@@ -278,25 +295,23 @@ body {
 }
 
 .attr{
-    color: red;
+    color: #66DBEF;
 }
 
 .var{
-    color: orange;
+    color: #39ff14;
 }
 
 
 /* Projects Section */
 
-
-
 #project-container{
+    
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
     gap: 2%;
-    min-height: 0;
-    min-width: 0;
+
 }
 
 .projectHeader      {grid-area: projectHeader}
@@ -306,7 +321,6 @@ body {
 .projectLanguage    {grid-area: projectLanguage}
 
 .project{
-    
     display: grid;
     border: 1px white solid;
     overflow: hidden;
@@ -357,17 +371,20 @@ body {
 }
 
 /* Contact Section */
-#Contact a{
+#Contact-list a{
     color: white;
 }
 
-#Contact a:hover{
+#Contact-list li a:hover{
     color: rgb(175, 175, 175);
 }
 
-#Contact-container{
-    display: flex;
-    justify-content: center;
+#Contact{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    
     gap: 3%;
 }
 

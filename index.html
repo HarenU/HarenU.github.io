@@ -22,49 +22,62 @@
 
         <div class="HeaderNav">
             <ul class="HeaderList">
-                <!-- <li><a href="#AboutMe"> About</a></li> -->
+                <li><a href="#AboutMe"> About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact"> Contact</a></li>
+
             </ul>
         </div>
 
     </header>
 
     <div id="IntroHeader">
-        <div id="IntroName">
-            <div id="NameContainer">
-                <p id="MainName"> > Haren Upadhayay</p>
-                <p id="JobTitle"> Junior Software Developer</p>
-            </div>
+        <div id="NameContainer">
+            <h6 id="greeting">Hi! My name is,</h6>
+            <h2 id="name">Haren Upadhayay</h2>
+            <p>Aspiring Software Developer</p>
+
+            <div id="introDesc"> I have graduated from the 'University of Greenwich' studying 'BSc H
+                Computer Science' and I am
+                currently looking for a role in
+                software engineering to build upon my
+                skills and learn some new things!</div>
             <a href="CV.pdf" target="_blank"><button id="CVDown">CV </button></a>
         </div>
+
+
 
     </div>
 
 
 
-    <!-- 
+
     <section id="AboutMe">
-        <h1>About Me</h1>
+        <h4 class="section-header">About Me</h4>
         <div id="AboutMe-container">
-
-            <p>
-                Hey, my name is Haren Upadhayay, i have graduated from the 'University of Greenwich' studying 'BSc H
-                Computer Science'. I am currently looking for a role in software engineering to build upon my skills and
-                learn some new things!
-            </p>
-
+            <div>
+                <p>
+                    Hey, my name is Haren Upadhayay, I enjoy building things and problem solving. My interest in
+                    Computer Science started in 2013 when we had a few
+                    lessons in GCSE
+                    Computing learning python, and I've been hooked ever since! My interests dont just stop at computers
+                    though, I love learning about all kinds of things and im always keen to try out new things.
+                </p>
+            </div>
             <ul>
-                <li><a class="var">str</a> <a class="attr">Name = </a>Haren Upadhayay</li>
-                <li><a class="var">int</a> <a class="attr">Age = </a>22</li>
+                <li><a class="var">str</a> <a class="attr">firstName</a> = <a class="str">"Haren"</a></li>
+                <li><a class="var">str</a> <a class="attr">lastName</a> = <a class="str">"Upadhayay"</a></li>
+                <li><a class="var">int</a> <a class="attr">currentAge</a> = <a class="int">22</a></li>
+                <li><a class="var">str</a> <a class="attr">dateOfBirth</a> = <a class="str">"07/09/1999"</a></li>
 
             </ul>
 
         </div>
-    </section> -->
+    </section>
 
     <section id="Languages">
         <h4 class="section-header">My Languages</h4>
+        <p>Here are some of the languages I've worked with, im always looking to build upon my skillset and learn new
+            things!</p>
         <div class="skill-container">
 
             <div class="skill-item">
@@ -100,6 +113,8 @@
 
     <section id="projects">
         <h4>Some Projects</h4>
+        <p>Here are some of the things I've created, click on the image to see a live demo/link to the github
+            repository!</p>
         <div id="project-container">
             <div class="project">
 
@@ -200,19 +215,16 @@
     </section>
 
 
-    <section id="Contact">
-        <h4>Get in Touch!</h4>
-
-        <div id="Contact-container">
-            <a href="https://www.linkedin.com/in/haren-upadhayay-aa4816147/" target="_blank"><i
-                    class="fa-brands fa-linkedin fa-3x"></i></a>
-            <a href="https://github.com/HarenU" target="_blank">
-                <i class="fa-brands fa-github fa-3x"></i></a>
-            <a href="mailto:hupadh4@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope fa-3x"></i></a>
-
-        </div>
-    </section>
+    <div id="Contact">
+        <ul id="Contact-list">
+            <li><a href="https://www.linkedin.com/in/haren-upadhayay-aa4816147/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/HarenU" target="_blank">
+                    <i class="fa-brands fa-github fa-2x"></i></a></li>
+            <li><a href="mailto:hupadh4@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope fa-2x"></i></a></li>
+        </ul>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
