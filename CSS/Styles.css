@@ -154,6 +154,7 @@ header a:hover:after {
     margin: 0% 0% 5% 0%;
     background: transparent;
     color: #39ff14;
+    cursor: pointer;
     border: 2px #39ff14 solid;
     z-index: 2;
     float: right;
