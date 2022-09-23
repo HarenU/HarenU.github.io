@@ -8,9 +8,7 @@ body{
     scroll-behavior: smooth;
 }
 
-html{
-    
-}
+
 
 /* ul:not(.browser-default)>li {
     list-style-type: disc;
@@ -134,9 +132,10 @@ header a:hover:after {
     align-items: center;
     justify-content: center;
     filter: brightness(100%);
-    background-image: url(../images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg);
+    margin: 0% 0% 0% -20em;
+    /* background-image: url(../images/pexels-pixabay-270360.jpg); */
     padding: 10% 0 ;
-    background-size: 100% 200%;
+    background-size: 100% 100%;
     
 }
 
@@ -151,13 +150,13 @@ header a:hover:after {
 #CVDown {
     padding: 4% 10%;
     font-size: 25px;
-    margin: 0% 0% 5% 0%;
+    margin: 5% 0% 5% 0%;
     background: transparent;
     color: #39ff14;
     cursor: pointer;
     border: 2px #39ff14 solid;
     z-index: 2;
-    float: right;
+    float: left;
 
 }
 
@@ -168,8 +167,8 @@ header a:hover:after {
 }
 
 #NameContainer{
-    border: whitesmoke 2px solid;
-    background-color: rgba(0, 0, 0, 0.703);
+    /* border: whitesmoke 2px solid;
+    background-color: rgba(0, 0, 0, 0.703); */
     justify-content: center;
     padding: 2% 5% 2% 2%;
     font: bolder;
@@ -186,6 +185,15 @@ header a:hover:after {
     border: 1px white solid;
     padding: 3%;
     background-color: rgb(5, 5, 56);
+}
+
+#aboutprofile{
+    display: grid;  
+    grid-template-columns: repeat(1, 100%);
+}
+
+#selfimage{
+    margin: 0% 0% 0% 40%;
 }
 
 .str{
@@ -205,7 +213,7 @@ section{
 #AboutMe-container ul{
     padding: 0% 2rem;
     display: block;
-    list-style-type: none ;
+    
     
 }
 
