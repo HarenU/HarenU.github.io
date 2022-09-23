@@ -174,6 +174,62 @@ header a:hover:after {
     font: bolder;
     max-width: 40%;
 }
+@media (max-width: 481px){
+    #IntroHeader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: -25%;
+        /* background-image: url(../images/pexels-pixabay-270360.jpg); */
+        padding: 0% ;
+        background-size: 100% 100%;
+        
+    }
+    
+    #IntroName {
+        background-color: rgba(5, 1, 51, 0.74);
+        border: 15px white groove;
+        padding: 0% 0%;
+        
+        text-align: center;
+    }
+
+    #IntroDesc{
+        padding: 0% -10em 0% 0%
+    }
+    
+    #CVDown {
+        padding: 4% 10%;
+        font-size: 25px;
+        margin: 5% 0% 5% 0%;
+        background: transparent;
+        color: #39ff14;
+        cursor: pointer;
+        border: 2px #39ff14 solid;
+        z-index: 2;
+        
+    
+    }
+    
+    #CVDown:hover {
+        background-color: #39ff14;
+        color:rgb(5, 1, 51);
+    
+    }
+    
+    #NameContainer{
+        justify-content: center;
+        padding: 0%;
+        font: bolder;
+        max-width: 40%;
+    }
+
+    #name {
+        margin: -1% 0 0 0 ;
+        font-size: 300%;
+     }
+}
 
 #name {
    margin: -1% 0 0 0 ;
@@ -187,13 +243,44 @@ header a:hover:after {
     background-color: rgb(5, 5, 56);
 }
 
+#AboutMe-Contact li{
+display: none;
+
+}
+@media (max-width: 481px){
+    #AboutMe-container{
+        display: grid;  
+        grid-template-columns: repeat(1, 100%);
+        border: 1px white solid;
+        padding: 3%;
+        background-color: rgb(5, 5, 56);
+    }
+    #AboutMe-Contact li{
+        justify-content: center;
+        padding: 5px;
+        display: flex;
+        list-style-type: none;
+        flex-wrap: nowrap;
+        gap: 6%;
+ 
+    }
+}
+
 #aboutprofile{
     display: grid;  
     grid-template-columns: repeat(1, 100%);
 }
 
 #selfimage{
-    margin: 0% 0% 0% 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#imageContainer{
+    display: flex;
+    justify-content: center;
 }
 
 .str{
@@ -323,6 +410,17 @@ section>p{
 
 }
 
+@media (max-width: 481px){
+    #project-container{
+    
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        gap: 2%;
+    
+    }
+}
+
 .projectHeader      {grid-area: projectHeader}
 .projectImage       {grid-area: projectImage}
 .projectFeature     {grid-area: projectFeature}
@@ -347,6 +445,26 @@ section>p{
     
 }
 
+@media (max-width: 481px){
+.project{
+    display: grid;
+    border: 1px white solid;
+    overflow: hidden;
+    min-width: 0;
+    background-color: rgb(5, 5, 56);
+    grid-template:  "projectHeader"
+                    "projectImage"
+                    "projectFeature"
+                    "projectDesc"
+                    "projectLanguage"
+}
+
+.projectImage{
+   height:  100px;
+   width:   300px;
+    
+}
+}
 .feature {
     list-style-type: disc !important;
 }
@@ -397,6 +515,17 @@ section>p{
     gap: 3%;
 }
 
+@media (max-width: 481px){
+    #Contact{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        display: none;
+        gap: 3%;
+    }
+    
+}
 
 
 
