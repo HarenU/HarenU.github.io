@@ -471,12 +471,17 @@ section>p{
 
 .projectLanguage {
     justify-content: center;
-    padding: 0px;
+    /* margin-top: -0.5rem; */
+    padding-bottom: 2rem;
     display: flex;
     list-style-type: none;
     flex-wrap: nowrap;
     color: rgb(209, 209, 209);
     gap: 2%;
+}
+
+.projectLanguage img {
+    height: 50px;
 }
 
 .collapsible-header{
